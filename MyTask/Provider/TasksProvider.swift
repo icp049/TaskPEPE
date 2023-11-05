@@ -19,6 +19,12 @@ final class TasksProvider {
     
     private let persistentContainer: NSPersistentContainer
     
+    
+    var viewContext: NSManagedObjectContext{
+        persistentContainer.viewContext
+    }
+    
+    
     private init() {
         
         persistentContainer = NSPersistentContainer(name: "TasksDataModel")
@@ -30,6 +36,5 @@ final class TasksProvider {
         }
         
     }
-    
-    
+        
 }

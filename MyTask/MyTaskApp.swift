@@ -12,6 +12,7 @@ struct MyTaskApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, TasksProvider.shared.viewContext) //make changes into our view
         }
     }
 }
