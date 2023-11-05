@@ -14,33 +14,14 @@ struct ContentView: View {
                 
                 
                 ForEach((0...10), id: \.self){ item in
-                    VStack(alignment: .leading, spacing: 8){
-                        
-                        Text("TaskName")
-                            .font(.system(size: 26))
-                        
-                        Text("TasKNote")
-                            .font(.caption)
-                        
-                        }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .overlay(alignment: .topTrailing){
-                        Button{
-                            
-                        } label: {
-                            Image(systemName: "star")
-                                .font(.title3)
-                                .symbolVariant(.fill)
-                                .foregroundColor(.gray.opacity(0.3))
-                        }
-                        .buttonStyle(.plain)
-                    }
-                    
+                   
+                    TaskRowView()
                     
                 }
                 
             }
         }
+        .navigationTitle("My Tasks")
     }
 }
 
