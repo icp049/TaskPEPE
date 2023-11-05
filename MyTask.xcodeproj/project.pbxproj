@@ -11,6 +11,8 @@
 		A6CFAC4A2AF7460B00267E03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CFAC492AF7460B00267E03 /* ContentView.swift */; };
 		A6CFAC4C2AF7460E00267E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6CFAC4B2AF7460E00267E03 /* Assets.xcassets */; };
 		A6CFAC4F2AF7460E00267E03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6CFAC4E2AF7460E00267E03 /* Preview Assets.xcassets */; };
+		A6CFAC572AF74D6600267E03 /* TasksDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6CFAC552AF74D6600267E03 /* TasksDataModel.xcdatamodeld */; };
+		A6CFAC592AF7507100267E03 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CFAC582AF7507100267E03 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		A6CFAC492AF7460B00267E03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A6CFAC4B2AF7460E00267E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6CFAC4E2AF7460E00267E03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A6CFAC562AF74D6600267E03 /* TasksDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TasksDataModel.xcdatamodel; sourceTree = "<group>"; };
+		A6CFAC582AF7507100267E03 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		A6CFAC462AF7460B00267E03 /* MyTask */ = {
 			isa = PBXGroup;
 			children = (
+				A6CFAC5A2AF750A200267E03 /* Model */,
 				A6CFAC472AF7460B00267E03 /* MyTaskApp.swift */,
 				A6CFAC492AF7460B00267E03 /* ContentView.swift */,
+				A6CFAC552AF74D6600267E03 /* TasksDataModel.xcdatamodeld */,
 				A6CFAC4B2AF7460E00267E03 /* Assets.xcassets */,
 				A6CFAC4D2AF7460E00267E03 /* Preview Content */,
 			);
@@ -65,6 +71,14 @@
 				A6CFAC4E2AF7460E00267E03 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A6CFAC5A2AF750A200267E03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6CFAC582AF7507100267E03 /* Task.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6CFAC592AF7507100267E03 /* Task.swift in Sources */,
 				A6CFAC4A2AF7460B00267E03 /* ContentView.swift in Sources */,
+				A6CFAC572AF74D6600267E03 /* TasksDataModel.xcdatamodeld in Sources */,
 				A6CFAC482AF7460B00267E03 /* MyTaskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +355,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A6CFAC552AF74D6600267E03 /* TasksDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A6CFAC562AF74D6600267E03 /* TasksDataModel.xcdatamodel */,
+			);
+			currentVersion = A6CFAC562AF74D6600267E03 /* TasksDataModel.xcdatamodel */;
+			path = TasksDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A6CFAC3C2AF7460B00267E03 /* Project object */;
 }
