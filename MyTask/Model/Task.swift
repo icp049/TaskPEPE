@@ -15,5 +15,9 @@ final class Task: NSManagedObject {
     @NSManaged var taskDate:Date
     @NSManaged var taskNote:String
     
-    
+    override func awakeFromInsert() {
+        super.awakeFromInsert()
+        setPrimitiveValue(Date.now, forKey: "taskDate")
+      
+    }
 }

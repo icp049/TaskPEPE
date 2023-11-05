@@ -13,6 +13,7 @@
 		A6CFAC4F2AF7460E00267E03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6CFAC4E2AF7460E00267E03 /* Preview Assets.xcassets */; };
 		A6CFAC572AF74D6600267E03 /* TasksDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6CFAC552AF74D6600267E03 /* TasksDataModel.xcdatamodeld */; };
 		A6CFAC592AF7507100267E03 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CFAC582AF7507100267E03 /* Task.swift */; };
+		A6CFAC5D2AF7530300267E03 /* TasksProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CFAC5C2AF7530300267E03 /* TasksProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		A6CFAC4E2AF7460E00267E03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A6CFAC562AF74D6600267E03 /* TasksDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TasksDataModel.xcdatamodel; sourceTree = "<group>"; };
 		A6CFAC582AF7507100267E03 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		A6CFAC5C2AF7530300267E03 /* TasksProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		A6CFAC462AF7460B00267E03 /* MyTask */ = {
 			isa = PBXGroup;
 			children = (
+				A6CFAC5B2AF752DD00267E03 /* Provider */,
 				A6CFAC5A2AF750A200267E03 /* Model */,
 				A6CFAC472AF7460B00267E03 /* MyTaskApp.swift */,
 				A6CFAC492AF7460B00267E03 /* ContentView.swift */,
@@ -79,6 +82,14 @@
 				A6CFAC582AF7507100267E03 /* Task.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A6CFAC5B2AF752DD00267E03 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				A6CFAC5C2AF7530300267E03 /* TasksProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 				A6CFAC592AF7507100267E03 /* Task.swift in Sources */,
 				A6CFAC4A2AF7460B00267E03 /* ContentView.swift in Sources */,
 				A6CFAC572AF74D6600267E03 /* TasksDataModel.xcdatamodeld in Sources */,
+				A6CFAC5D2AF7530300267E03 /* TasksProvider.swift in Sources */,
 				A6CFAC482AF7460B00267E03 /* MyTaskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
