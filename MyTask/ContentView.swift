@@ -12,16 +12,22 @@ struct ContentView: View {
         NavigationStack {
             List{
                 
-                
                 ForEach((0...10), id: \.self){ item in
-                   
-                    TaskRowView()
+                    
+                    ZStack(alignment: .leading){
+                        NavigationLink(destination: TaskDetailView()){
+                            EmptyView()
+                        }
+                        .opacity(0)
+                        
+                        TaskRowView()
+                        
+                    }
                     
                 }
-                
             }
+            .navigationTitle("My Tasks")
         }
-        .navigationTitle("My Tasks")
     }
 }
 
