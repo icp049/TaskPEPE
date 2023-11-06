@@ -21,7 +21,9 @@ final class EditTaskViewModel: ObservableObject{
     }
     
     func save() throws {
-        
+        if context.hasChanges{
+            try context.save()
+        }
     }
     
 }

@@ -8,13 +8,32 @@
 import SwiftUI
 
 struct CreateTaskView: View {
+    
+    @Environment(\.dismiss) private var dismiss
+    @ObservedObject var vm: EditTaskViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        List{
+            TextField("TaskName", text: vm.task.taskName)
+                .keyboardType(.namePhonePad)
+            
+            TextField("TaskNote", text: vm.task.taskNote)
+            
+            
+            
+            
+            DatePicker("TaskDate", selection: .constant(.now),
+                       displayedComponents: [.date])
+            .datePickerStyle(.compact)
+        }
+       
+        
     }
 }
 
 struct CreateTaskView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateTaskView()
+        CreateTaskView(vm: .init(provider: .shared))
     }
 }
