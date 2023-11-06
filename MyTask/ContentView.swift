@@ -11,6 +11,8 @@ struct ContentView: View {
     
     @State private var isShowingNewTask = false
     
+    var provider = TasksProvider.shared
+    
     var body: some View {
         NavigationStack {
             List{

@@ -17,6 +17,7 @@
 		A6CFAC5F2AF75EB300267E03 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CFAC5E2AF75EB300267E03 /* TaskRowView.swift */; };
 		A6CFAC612AF761C200267E03 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CFAC602AF761C200267E03 /* TaskDetailView.swift */; };
 		A6CFAC632AF7635100267E03 /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CFAC622AF7635100267E03 /* CreateTaskView.swift */; };
+		A6CFAC662AF8921F00267E03 /* EditTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CFAC652AF8921F00267E03 /* EditTaskViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A6CFAC5E2AF75EB300267E03 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
 		A6CFAC602AF761C200267E03 /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 		A6CFAC622AF7635100267E03 /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
+		A6CFAC652AF8921F00267E03 /* EditTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,13 +65,13 @@
 		A6CFAC462AF7460B00267E03 /* MyTask */ = {
 			isa = PBXGroup;
 			children = (
+				A6CFAC642AF8920800267E03 /* Create */,
 				A6CFAC5B2AF752DD00267E03 /* Provider */,
 				A6CFAC5A2AF750A200267E03 /* Model */,
 				A6CFAC472AF7460B00267E03 /* MyTaskApp.swift */,
 				A6CFAC492AF7460B00267E03 /* ContentView.swift */,
 				A6CFAC5E2AF75EB300267E03 /* TaskRowView.swift */,
 				A6CFAC602AF761C200267E03 /* TaskDetailView.swift */,
-				A6CFAC622AF7635100267E03 /* CreateTaskView.swift */,
 				A6CFAC552AF74D6600267E03 /* TasksDataModel.xcdatamodeld */,
 				A6CFAC4B2AF7460E00267E03 /* Assets.xcassets */,
 				A6CFAC4D2AF7460E00267E03 /* Preview Content */,
@@ -99,6 +101,15 @@
 				A6CFAC5C2AF7530300267E03 /* TasksProvider.swift */,
 			);
 			path = Provider;
+			sourceTree = "<group>";
+		};
+		A6CFAC642AF8920800267E03 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				A6CFAC622AF7635100267E03 /* CreateTaskView.swift */,
+				A6CFAC652AF8921F00267E03 /* EditTaskViewModel.swift */,
+			);
+			path = Create;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 				A6CFAC632AF7635100267E03 /* CreateTaskView.swift in Sources */,
 				A6CFAC592AF7507100267E03 /* Task.swift in Sources */,
 				A6CFAC4A2AF7460B00267E03 /* ContentView.swift in Sources */,
+				A6CFAC662AF8921F00267E03 /* EditTaskViewModel.swift in Sources */,
 				A6CFAC572AF74D6600267E03 /* TasksDataModel.xcdatamodeld in Sources */,
 				A6CFAC5D2AF7530300267E03 /* TasksProvider.swift in Sources */,
 				A6CFAC5F2AF75EB300267E03 /* TaskRowView.swift in Sources */,

@@ -25,6 +25,10 @@ final class TasksProvider {
     }
     
     
+    var newContext: NSManagedObjectContext{
+        persistentContainer.newBackgroundContext()
+    }
+    
     private init() {
         
         persistentContainer = NSPersistentContainer(name: "TasksDataModel")
