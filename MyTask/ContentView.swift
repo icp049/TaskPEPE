@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isShowingNewTask = false
+    
     var body: some View {
         NavigationStack {
             List{
@@ -24,6 +27,21 @@ struct ContentView: View {
                         
                     }
                     
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .primaryAction){
+                    Button {
+                        isShowingNewTask.toggle()
+                    } label: {
+                        Image(systemName: "plus")
+                            .font(.title)
+                    }
+                }
+            }
+            .sheet(isPresented: $isShowingNewTask){
+                NavigationStack{
+                    CreateTaskView()
                 }
             }
             .navigationTitle("My Tasks")
